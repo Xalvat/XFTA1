@@ -1,0 +1,136 @@
+===Patch A1===
+
+
+===PERMEX===
+groups:
+  Guest:
+    build: true
+    permissions:
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    - essentials.afk
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.depth
+    - essentials.delhome
+    - essentials.help
+    - essentials.home
+    - essentials.kit
+    - essentials.kit.tools
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.ping
+    - essentials.r
+    - essentials.rules
+    - essentials.seen
+    - essentials.sethome
+    - essentials.signs.use.disposal
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.ignore
+    - rpghealth.hp
+    - rpghealth.gethp
+    - wyl.regular
+    - modifyworld.chat
+    - modifyworld.*
+    options:
+      prefix: '&2[&aOutsider&2]&7'
+      default: true
+
+  Member:
+    inheritance:
+    - Guest 
+    build: true
+    permissions:
+    options:
+      prefix: '&2[&aCitizen&2]&7'
+      default: false
+
+  VIP:
+    inheritance:
+    - Guest
+    - Member
+    build: true
+    permissions:
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    options:
+      prefix: '&6[&eSCSM&6]&7 '
+      default: false
+
+  Mod:
+    inheritance:
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    options:
+      prefix: '&1[&9MKnight&1]&f '
+      default: false
+
+  Mod2:
+    inheritance:
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    options:
+      prefix: '&1[&9Viking&1]&f '
+      default: false
+
+
+  Admin:
+    inheritance:
+    - Mod
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    - essentials.kick
+    - essentials.mute
+    - essentials.tempban
+    options:
+      prefix: '&9[&bKnight Lord&9]&f '
+      default: false
+
+  Adminv:
+    inheritance:
+    - Mod
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    - essentials.kick
+    - essentials.mute
+    - essentials.tempban
+    options:
+      prefix: '&0[&1Viking King&0]&f '
+      default: false
+
+  Owner:
+    build: true
+    permissions:
+    - '*'
+    options:
+      prefix: '&6[&4King&6]&f '
+      default: false
+users:
+
+===Done===
+
