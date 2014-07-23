@@ -134,3 +134,29 @@ users:
 
 ===Done===
 
+===WorkLog===
+
+Working on new world / spawn areas' 
+0.00% /100.00%
+Expected ETA 1->2 Days.
+
+===Done===
+
+===Plugin Info===
+
+Kept Plugin / Changes
+
+MCMMO / None
+
+RPGHP / Starting HP is now 15 hearts (30HP)
+
+Lives / Lives Reduced to 3 -> Ban Time Upped to 15min
+          
+===Done===
+
+
+
+
+
+
+
